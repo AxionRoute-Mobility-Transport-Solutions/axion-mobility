@@ -6,16 +6,18 @@
 
 <title>Axion Route Mobility & Transport Solutions</title>
 
-<meta name="description" content="Axion Route Mobility & Transport Solutions provides reliable, discreet and professional private transportation across the Eastern Cape. Free quotations available.">
+<meta name="description" content="Axion Route Mobility & Transport Solutions provides reliable, discreet and professional private transportation across Jeffreys Bay, Port Elizabeth (Gqeberha), St Francis Bay and surrounding Eastern Cape areas. Free quotations available.">
 
-<link rel="icon" href="favicon.png">
+<!-- Google Search Console Verification -->
+<meta name="google-site-verification" content="PASTE_YOUR_VERIFICATION_CODE_HERE" />
+
+<link rel="icon" href="logo.png">
 
 <style>
 :root{
   --red:#8b0000;
   --gold:#d4af37;
   --black:#0b0b0b;
-  --panel:#141414;
 }
 
 *{margin:0;padding:0;box-sizing:border-box}
@@ -46,13 +48,13 @@ header{
 
 header h1{
   color:var(--gold);
-  font-size:2.8rem;
+  font-size:2.7rem;
 }
 
 .slogan{
   color:var(--gold);
   font-style:italic;
-  font-size:1.25rem;
+  font-size:1.2rem;
   margin-top:10px;
 }
 
@@ -83,14 +85,7 @@ h2{
   text-align:center;
   color:var(--gold);
   margin-bottom:40px;
-  font-size:2.3rem;
-}
-
-/* GRID */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:25px;
+  font-size:2.2rem;
 }
 
 /* CARDS */
@@ -100,6 +95,13 @@ h2{
   border-radius:18px;
   padding:35px;
   box-shadow:0 25px 50px rgba(0,0,0,.75);
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
 }
 
 /* SLIDER */
@@ -151,17 +153,13 @@ button{
   cursor:pointer;
 }
 
-/* BUTTON */
-.btn{
-  display:inline-block;
-  margin-top:20px;
-  padding:14px 34px;
-  background:linear-gradient(135deg,var(--gold),#b8962f);
-  color:#000;
-  font-weight:bold;
-  border-radius:50px;
-  text-decoration:none;
+/* REVIEWS */
+.review{
+  display:none;
+  text-align:center;
+  font-style:italic;
 }
+.review.active{display:block}
 
 /* WHATSAPP FLOAT */
 .whatsapp{
@@ -175,7 +173,6 @@ button{
   font-size:22px;
   text-decoration:none;
   box-shadow:0 0 25px rgba(37,211,102,.6);
-  z-index:999;
 }
 
 /* FOOTER */
@@ -197,7 +194,7 @@ footer{
 
 <header>
   <div class="logo">
-    <img src="logo.png" alt="Axion Route Mobility & Transport Solutions">
+    <img src="logo.png" alt="Axion Route Mobility & Transport Solutions" loading="eager">
   </div>
 
   <h1>Axion Route Mobility & Transport Solutions</h1>
@@ -205,6 +202,7 @@ footer{
 
   <div class="actions">
     <a href="tel:0725842187">📞 Call Now</a>
+    <a href="mailto:Bookings@AxionRoute.co.za">✉ Email</a>
     <a href="https://wa.me/27725842187" target="_blank">💬 WhatsApp</a>
   </div>
 
@@ -214,16 +212,15 @@ footer{
 </header>
 
 <section>
-<h2>About Axion Route</h2>
+<h2>About Axion Route Mobility & Transport Solutions</h2>
 <div class="card">
 <p>
 Axion Route Mobility & Transport Solutions provides reliable, discreet and professional private transportation across Jeffreys Bay, Port Elizabeth (Gqeberha), St Francis Bay and surrounding Eastern Cape areas.
 <br><br>
-We specialise in luxury airport transfers, private shuttle services, corporate and executive travel, event transport and custom long-distance routes. Our services are delivered in a premium Mazda CX-5 Carbon Edition, while deliveries are performed in a Nissan NP200.
+We specialise in luxury airport transfers, private shuttle services, corporate and executive travel, event transport and custom long-distance routes. Our services are delivered in a premium Mazda CX-5 Carbon Edition, while deliveries are performed in a Nisssan NP200.
 <br><br>
 Axion Route is ideal for business travellers, corporate clients, event organisers and private guests who value punctuality, privacy and attention to detail. All trips are private and pre-booked, ensuring seamless, stress-free travel from start to finish.
 </p>
-
 <p style="margin-top:15px;font-weight:bold;color:var(--gold);">
 🌐 www.axionroute.co.za
 </p>
@@ -232,59 +229,51 @@ Axion Route is ideal for business travellers, corporate clients, event organiser
 
 <section>
 <h2>Our Vehicles</h2>
-
 <div class="grid">
 
 <div class="card">
-<h3>Mazda CX-5 Carbon Edition</h3>
+<h3 style="font-weight:bold;">Mazda CX-5 Carbon Edition</h3>
 <div class="slider">
-<img src="mazda-interior-front.jpg" class="slide active">
-<img src="mazda-interior-dash.jpg" class="slide">
-<img src="mazda-interior-back.jpg" class="slide">
-<img src="mazda-boot.jpg" class="slide">
-<img src="mazda-side-mall.jpg" class="slide">
-<img src="mazda-side.jpg" class="slide">
-<img src="mazda-night.jpg" class="slide">
-<img src="mazda-front.jpg" class="slide">
+<img src="mazda-interior-front.jpg" class="slide active" loading="lazy" decoding="async">
+<img src="mazda-interior-dash.jpg" class="slide" loading="lazy">
+<img src="mazda-interior-back.jpg" class="slide" loading="lazy">
+<img src="mazda-boot.jpg" class="slide" loading="lazy">
+<img src="mazda-side-mall.jpg" class="slide" loading="lazy">
+<img src="mazda-side.jpg" class="slide" loading="lazy">
+<img src="mazda-night.jpg" class="slide" loading="lazy">
+<img src="mazda-front.jpg" class="slide" loading="lazy">
 </div>
 </div>
 
 <div class="card">
-Pick-up & Delivery Transport<br>
-<small>(Nissan NP200 with canopy)</small>
-<img src="nissan-np200.jpg" class="vehicle-img">
+<h3 style="font-weight:bold;">Pick-up & Delivery Transport</h3>
+<small>(Nisssan NP200 with canopy)</small>
+<img src="nisson-np200.jpg" class="vehicle-img" loading="lazy">
 </div>
 
 </div>
 </section>
 
 <section>
-<h2>Book a Service</h2>
+<h2>Service Area</h2>
 <div class="card">
+<iframe 
+  src="https://www.google.com/maps?q=Jeffreys+Bay+Eastern+Cape&output=embed"
+  width="100%" height="400" style="border:0;border-radius:14px;"
+  loading="lazy"></iframe>
+</div>
+</section>
 
-<form onsubmit="sendWhatsApp(); return false;">
+<section>
+<h2>Google Reviews</h2>
+<div class="card">
+<div class="review active">⭐ “Professional, on time and very comfortable airport transfer.”</div>
+<div class="review">⭐ “Excellent service, clean vehicle and courteous driver.”</div>
+<div class="review">⭐ “Highly recommended for corporate and private travel.”</div>
 
-<select id="service" required>
-<option value="">Select Service</option>
-<option>Luxury Shuttle</option>
-<option>Airport Transfer</option>
-<option>Chauffeur Service</option>
-<option>Transport</option>
-<option>Delivery</option>
-</select>
-
-<input id="name" placeholder="Full Name" required>
-<input id="phone" placeholder="Contact Number" required>
-<input id="pickup" placeholder="Pickup Location" required>
-<input id="dropoff" placeholder="Drop-off Location">
-<input id="date" type="date" required>
-<input id="time" type="time" required>
-
-<textarea id="details" placeholder="Additional details"></textarea>
-
-<button type="submit">Send Booking via WhatsApp</button>
-
-</form>
+<p style="margin-top:20px;">
+<a class="actions a" href="https://g.page/r/CXGyldJxpv62EBM/review" target="_blank">⭐ Write a Review</a>
+</p>
 </div>
 </section>
 
@@ -292,13 +281,14 @@ Pick-up & Delivery Transport<br>
 <div class="pride"></div>
 <p><strong>LGBTQIA+ Inclusive & Friendly Service</strong></p>
 <p>Axion Route Mobility & Transport Solutions</p>
-<p>📞 072 584 2187</p>
+<p>📞 072 584 2187 • ✉ Bookings@AxionRoute.co.za</p>
 <p>🌐 www.axionroute.co.za</p>
 </footer>
 
 <a class="whatsapp" href="https://wa.me/27725842187" target="_blank">💬</a>
 
 <script>
+/* Slider */
 const slides=document.querySelectorAll('.slide');
 let current=0;
 setInterval(()=>{
@@ -307,21 +297,14 @@ setInterval(()=>{
   slides[current].classList.add('active');
 },5000);
 
-function sendWhatsApp(){
-  const msg = `
-Booking Request – Axion Route
-
-Service: ${service.value}
-Name: ${name.value}
-Phone: ${phone.value}
-Pickup: ${pickup.value}
-Drop-off: ${dropoff.value}
-Date: ${date.value}
-Time: ${time.value}
-Details: ${details.value}
-`;
-  window.open("https://wa.me/27725842187?text="+encodeURIComponent(msg),"_blank");
-}
+/* Reviews */
+const reviews=document.querySelectorAll('.review');
+let r=0;
+setInterval(()=>{
+  reviews.forEach(rv=>rv.classList.remove('active'));
+  r=(r+1)%reviews.length;
+  reviews[r].classList.add('active');
+},6000);
 </script>
 
 </body>
