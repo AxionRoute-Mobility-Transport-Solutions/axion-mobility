@@ -9,7 +9,7 @@
 <meta name="description" content="Axion Route Mobility & Transport Solutions provides reliable, discreet and professional private transportation across Jeffreys Bay, Port Elizabeth (Gqeberha), St Francis Bay and surrounding Eastern Cape areas. Free quotations available.">
 
 <!-- GOOGLE SEARCH CONSOLE -->
-<meta name="google-site-verification" content="PASTE-YOUR-VERIFICATION-CODE-HERE">
+<meta name="google-site-verification" content="PASTE_YOUR_SEARCH_CONSOLE_CODE_HERE">
 
 <!-- GOOGLE ANALYTICS (GA4) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y226H1LKWY"></script>
@@ -20,8 +20,6 @@ gtag('js', new Date());
 gtag('config', 'G-Y226H1LKWY');
 </script>
 
-<link rel="icon" href="logo.png">
-
 <!-- STRUCTURED REVIEW SCHEMA -->
 <script type="application/ld+json">
 {
@@ -29,6 +27,7 @@ gtag('config', 'G-Y226H1LKWY');
   "@type": "TransportationService",
   "name": "Axion Route Mobility & Transport Solutions",
   "url": "https://www.axionroute.co.za",
+  "logo": "https://www.axionroute.co.za/logo.png",
   "areaServed": {
     "@type": "AdministrativeArea",
     "name": "Eastern Cape, South Africa"
@@ -41,56 +40,71 @@ gtag('config', 'G-Y226H1LKWY');
 }
 </script>
 
+<link rel="icon" href="logo.png">
+
 <style>
-/* --- STYLING OMITTED FOR BREVITY — SAME AS LAST APPROVED VERSION --- */
-/* NO FUNCTIONAL CHANGES HERE */
+body{font-family:Segoe UI;background:#000;color:#fff;margin:0}
+header,section,footer{padding:60px 20px;text-align:center}
+h1,h2{color:#d4af37}
+a{color:#d4af37;text-decoration:none}
+.card{max-width:900px;margin:auto;background:#111;padding:30px;border-radius:14px}
+input,select,textarea,button{width:100%;padding:14px;margin:8px 0;border-radius:8px;border:none}
+button{background:#d4af37;font-weight:bold}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;
+padding:16px;border-radius:50%;font-size:22px}
 </style>
 </head>
 
 <body>
 
 <header>
-  <img src="logo.png" alt="Axion Route Mobility & Transport Solutions" style="max-width:420px;">
-  <h1>Axion Route Mobility & Transport Solutions</h1>
-  <p><em>Driven by Precision. Delivered with Class.</em></p>
+<img src="logo.png" alt="Axion Route Mobility & Transport Solutions" style="max-width:360px">
+<h1>Axion Route Mobility & Transport Solutions</h1>
+<p><em>Driven by Precision. Delivered with Class.</em></p>
+<p><strong>FREE quotations • Pre-booked private transport</strong></p>
 
-  <p><strong>FREE quotations available • Pre-booked private transport</strong></p>
-
-  <a href="tel:0725842187">📞 Call</a>
-  <a href="mailto:Bookings@AxionRoute.co.za">✉ Email</a>
-  <a href="https://wa.me/27725842187">💬 WhatsApp</a>
+<p>
+<a href="tel:0725842187">📞 Call</a> |
+<a href="mailto:Bookings@AxionRoute.co.za">✉ Email</a> |
+<a href="pricing.html">💰 Pricing</a>
+</p>
 </header>
 
 <section>
 <h2>Book a Service</h2>
+<div class="card">
 <form onsubmit="sendWhatsApp(); return false;">
-  <select id="service" required>
-    <option>Airport Transfer</option>
-    <option>Luxury Shuttle</option>
-    <option>Corporate Travel</option>
-    <option>Event Transport</option>
-    <option>Pick-up & Delivery</option>
-  </select>
+<select id="service">
+<option>Airport Transfer</option>
+<option>Luxury Shuttle</option>
+<option>Corporate / Executive Travel</option>
+<option>Event Transport</option>
+<option>Pick-up & Delivery</option>
+</select>
 
-  <input id="name" placeholder="Full Name" required>
-  <input id="phone" placeholder="Contact Number" required>
-  <input id="pickup" placeholder="Pickup Location" required>
-  <input id="dropoff" placeholder="Drop-off Location">
-  <input id="date" type="date" required>
-  <input id="time" type="time" required>
-  <textarea id="details" placeholder="Additional details"></textarea>
+<input id="name" placeholder="Full Name" required>
+<input id="phone" placeholder="Contact Number" required>
+<input id="pickup" placeholder="Pickup Location" required>
+<input id="dropoff" placeholder="Drop-off Location">
+<input id="date" type="date" required>
+<input id="time" type="time" required>
+<textarea id="details" placeholder="Additional details"></textarea>
 
-  <button type="submit">Send Booking via WhatsApp</button>
+<button type="submit">Send Booking via WhatsApp</button>
 </form>
+</div>
 </section>
 
 <section>
 <h2>Google Reviews</h2>
-<p>Read what our clients say or leave your own review.</p>
-
+<div class="card">
+<p>⭐ 4.9-Star Rated on Google</p>
+<p>
 <a href="https://g.page/r/CXGyldJxpv62EBM/review" target="_blank">
-⭐ Leave a Google Review
+Leave a Google Review
 </a>
+</p>
+</div>
 </section>
 
 <footer>
@@ -98,9 +112,11 @@ gtag('config', 'G-Y226H1LKWY');
 <p>📞 072 584 2187 • ✉ Bookings@AxionRoute.co.za</p>
 </footer>
 
+<a class="whatsapp" href="https://wa.me/27725842187" target="_blank">💬</a>
+
 <script>
 function sendWhatsApp(){
-  const msg = `
+const msg = `
 Booking Request – Axion Route
 
 Service: ${service.value}
@@ -112,7 +128,7 @@ Date: ${date.value}
 Time: ${time.value}
 Details: ${details.value}
 `;
-  window.open("https://wa.me/27725842187?text="+encodeURIComponent(msg));
+window.open("https://wa.me/27725842187?text="+encodeURIComponent(msg));
 }
 </script>
 
