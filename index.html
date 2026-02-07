@@ -15,8 +15,8 @@
 <style>
 :root{
   --gold:#d4af37;
-  --bg:#141414;
   --card:#1c1c1c;
+  --bg:#141414;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
@@ -25,7 +25,6 @@ body{
   font-family:'Segoe UI',Tahoma,Verdana,sans-serif;
   background:linear-gradient(180deg,#181818,#0f0f0f);
   color:#eee;
-  line-height:1.6;
 }
 
 /* HEADER */
@@ -49,7 +48,7 @@ h1{color:var(--gold);font-size:2.8rem}
 .slogan{color:var(--gold);font-style:italic;margin-top:10px}
 
 /* BUTTONS */
-.actions a, .btn{
+.actions a,.btn{
   display:inline-block;
   margin:10px;
   padding:15px 36px;
@@ -71,31 +70,32 @@ h2{
   text-align:center;
   color:var(--gold);
   margin-bottom:40px;
-  font-size:2.2rem;
 }
 
 .card{
   background:var(--card);
   border:1px solid rgba(212,175,55,.25);
   border-radius:18px;
-  padding:35px;
+  padding:30px;
   box-shadow:0 25px 45px rgba(0,0,0,.6);
 }
 
 /* GRID */
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:25px;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:30px;
+  align-items:start;
 }
 
 /* SLIDER */
 .slider{
   position:relative;
-  height:420px;
+  height:380px;
   background:#000;
-  border-radius:18px;
+  border-radius:14px;
   overflow:hidden;
+  margin-bottom:15px;
 }
 
 .slide{
@@ -109,6 +109,15 @@ h2{
 }
 
 .slide.active{opacity:1}
+
+/* VEHICLE IMAGE */
+.vehicle-img{
+  width:100%;
+  max-height:320px;
+  object-fit:contain;
+  border-radius:14px;
+  margin-bottom:15px;
+}
 
 /* FORM */
 input,select,textarea{
@@ -132,15 +141,10 @@ button{
 }
 
 /* REVIEWS */
-.review{
-  display:none;
-  text-align:center;
-  font-style:italic;
-  font-size:1.05rem;
-}
+.review{display:none;text-align:center;font-style:italic}
 .review.active{display:block}
 
-/* WHATSAPP FLOAT */
+/* WHATSAPP */
 .whatsapp{
   position:fixed;
   bottom:20px;
@@ -185,107 +189,60 @@ footer{
   </div>
 </header>
 
-<!-- ABOUT -->
-<section>
-<h2>About Us</h2>
-<div class="card">
-<p>
-<strong>Axion Route Mobility & Transport Solutions</strong> provides reliable, discreet and professional private transportation across Jeffreys Bay, Port Elizabeth (Gqeberha), St Francis Bay and surrounding Eastern Cape areas.
-<br><br>
-We specialise in luxury airport transfers, private shuttle services, corporate and executive travel, event transport and custom long-distance routes. Our services are delivered in a premium <strong>Mazda CX-5 Carbon Edition</strong>, while deliveries are performed in a <strong>Nissan NP200</strong>.
-<br><br>
-Axion Route is ideal for business travellers, corporate clients, event organisers and private guests who value punctuality, privacy and attention to detail. All trips are private and pre-booked, ensuring seamless, stress-free travel from start to finish.
-</p>
-</div>
-</section>
-
-<!-- VEHICLES -->
 <section>
 <h2>Our Fleet</h2>
+
 <div class="grid">
 
+<!-- MAZDA -->
 <div class="card">
 <h3><strong>Mazda CX-5 Carbon Edition</strong></h3>
+
 <div class="slider">
-  <img src="mazda-front.jpg" class="slide active" alt="Mazda CX-5 Front">
-  <img src="mazda-side.jpg" class="slide" alt="Mazda CX-5 Side">
-  <img src="mazda-side-mall.jpg" class="slide" alt="Mazda CX-5 Mall">
-  <img src="mazda-night.jpg" class="slide" alt="Mazda CX-5 Night">
-  <img src="mazda-interior-front.jpg" class="slide" alt="Mazda CX-5 Interior Front">
-  <img src="mazda-interior-dash.jpg" class="slide" alt="Mazda CX-5 Dashboard">
-  <img src="mazda-interior-back.jpg" class="slide" alt="Mazda CX-5 Rear Seats">
-  <img src="mazda-boot.jpg" class="slide" alt="Mazda CX-5 Boot">
+  <img src="mazda-front.jpg" class="slide active">
+  <img src="mazda-side.jpg" class="slide">
+  <img src="mazda-side-mall.jpg" class="slide">
+  <img src="mazda-night.jpg" class="slide">
+  <img src="mazda-interior-front.jpg" class="slide">
+  <img src="mazda-interior-dash.jpg" class="slide">
+  <img src="mazda-interior-back.jpg" class="slide">
+  <img src="mazda-boot.jpg" class="slide">
 </div>
 
-
-</div>
 <p>
 • Luxury seating (up to 4 passengers)<br>
 • Approx. 438L boot capacity (expandable)<br>
 • Dual-zone climate control<br>
 • USB & charging ports
 </p>
-<a class="btn" href="Axion_Route_Mazda_CX5_Modern_Rate_Card.pdf" target="_blank">🚘 View Mazda Rates</a>
+
+<a class="btn" href="Axion_Route_Mazda_CX5_Modern_Rate_Card.pdf" target="_blank">
+🚘 View Mazda Rates
+</a>
 </div>
 
+<!-- NP200 -->
 <div class="card">
 <h3><strong>Nissan NP200 – Pick-up & Delivery</strong></h3>
-<img src="nisson-np200.jpg" style="width:100%;border-radius:14px">
 
-<img src="Venter-trailer.jpg" style="width:100%;border-radius:14px;margin-top:15px">
+<img src="nisson-np200.jpg" class="vehicle-img">
+
 <p>
 • Payload capacity ±800kg<br>
 • Open or canopy configuration<br>
 • Suitable for parcels & bulk items
 </p>
-<img src="Venter-trailer.jpg" style="width:100%;border-radius:14px;margin-top:15px">
+
+<img src="Venter-trailer.jpg" class="vehicle-img">
+
 <p><strong>Venter Luggage Trailer (Optional Add-On)</strong><br>
 Available at an additional cost.</p>
-<a class="btn" href="Axion_Route_NP200_Modern_Rate_Card.pdf" target="_blank">🚚 View NP200 Rates</a>
-</div>
 
-</div>
-</section>
-
-<!-- BOOKING -->
-<section>
-<h2>Book a Service</h2>
-<div class="card">
-<form onsubmit="sendWhatsApp(); return false;">
-<select id="service" required>
-<option>Airport Transfer</option>
-<option>Luxury Shuttle</option>
-<option>Corporate / Executive Travel</option>
-<option>Event Transport</option>
-<option>Pick-up & Delivery</option>
-</select>
-
-<input id="name" placeholder="Full Name" required>
-<input id="phone" placeholder="Contact Number" required>
-<input id="pickup" placeholder="Pickup Location" required>
-<input id="dropoff" placeholder="Drop-off Location">
-<input id="date" type="date" required>
-<input id="time" type="time" required>
-<textarea id="details" placeholder="Additional details"></textarea>
-
-<button type="submit">Send Booking via WhatsApp</button>
-</form>
-</div>
-</section>
-
-<!-- REVIEWS -->
-<section>
-<h2>What Our Clients Say</h2>
-<div class="card">
-<div class="review active">⭐ “Professional, on time and very comfortable airport transfer.”</div>
-<div class="review">⭐ “Clean vehicle, courteous driver and excellent service.”</div>
-<div class="review">⭐ “Reliable, discreet and highly professional.”</div>
-
-<div style="margin-top:25px;">
-<a class="btn" href="https://g.page/r/CXGyldJxpv62EBM/review" target="_blank">
-⭐ Read or Write a Google Review
+<a class="btn" href="Axion_Route_NP200_Modern_Rate_Card.pdf" target="_blank">
+🚚 View NP200 Rates
 </a>
 </div>
+
 </div>
 </section>
 
@@ -300,7 +257,6 @@ Available at an additional cost.</p>
 <a class="whatsapp" href="https://wa.me/27725842187">💬</a>
 
 <script>
-/* Vehicle slider */
 const slides=document.querySelectorAll('.slide');
 let i=0;
 setInterval(()=>{
@@ -308,32 +264,6 @@ setInterval(()=>{
   i=(i+1)%slides.length;
   slides[i].classList.add('active');
 },5000);
-
-/* Review slider */
-const reviews=document.querySelectorAll('.review');
-let r=0;
-setInterval(()=>{
-  reviews.forEach(rv=>rv.classList.remove('active'));
-  r=(r+1)%reviews.length;
-  reviews[r].classList.add('active');
-},6000);
-
-/* WhatsApp Booking */
-function sendWhatsApp(){
-const msg = `
-Booking Request – Axion Route
-
-Service: ${service.value}
-Name: ${name.value}
-Phone: ${phone.value}
-Pickup: ${pickup.value}
-Drop-off: ${dropoff.value}
-Date: ${date.value}
-Time: ${time.value}
-Details: ${details.value}
-`;
-window.open("https://wa.me/27725842187?text="+encodeURIComponent(msg));
-}
 </script>
 
 </body>
